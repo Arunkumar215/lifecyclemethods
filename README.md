@@ -27,11 +27,7 @@ Step 7: Save and run the application.
 
 ## PROGRAM:
 ```
-/*
-Program to print the text “Hello World”.
-Developed by: Magesh C M
-Registeration Number : 212223220053
-*/
+
  
 
 package com.example.lifecyclemethod;
