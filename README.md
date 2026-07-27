@@ -1,4 +1,4 @@
-# Ex.No:1 To create a HelloWorld Activity using all lifecycles methods to display messages.
+# Ex.No:2 To create a HelloWorld Activity using all lifecycles methods to display messages.
 
 
 ## AIM:
@@ -27,73 +27,74 @@ Step 7: Save and run the application.
 
 ## PROGRAM:
 ```
-/*
-Program to print the text “Hello World”.
-Developed by: Magesh C M
-Registeration Number : 212223220053
-*/
- 
 
-package com.example.lifecyclemethod;
+Program to print the text “Hello World”.
+Developed by:Kavi M S
+Registeration Number :212223220044
+package com.example.lifecyclemethods;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
-        Toast.makeText(getApplicationContext(),"onCreate Called", Toast.LENGTH_LONG).show();
+        Toast toast = Toast.makeText(getApplicationContext(), "onCreate called", Toast.LENGTH_LONG);
+        toast.show();
 
     }
-
-    @Override
     protected void onStart(){
         super.onStart();
-        Toast.makeText(getApplicationContext(),"onStart Called", Toast.LENGTH_LONG).show();
+        Toast toast=Toast.makeText(getApplicationContext(), "onStart called",Toast.LENGTH_LONG);
+        toast.show();
     }
-
     protected void onRestart(){
         super.onRestart();
-        Toast.makeText(getApplicationContext(), "onRestart Called", Toast.LENGTH_SHORT).show();
+        Toast toast=Toast.makeText(getApplicationContext(),"onRestart called",Toast.LENGTH_LONG);
+        toast.show();
     }
     protected void onPause(){
         super.onPause();
-        Toast.makeText(getApplicationContext(), "onPause Called", Toast.LENGTH_SHORT).show();
-    }
-    protected void onResume(){
-        super.onResume();
-        Toast.makeText(getApplicationContext(), "onResume Called", Toast.LENGTH_SHORT).show();
+        Toast toast=Toast.makeText(getApplicationContext(),"onPause called",Toast.LENGTH_LONG);
+        toast.show();
+
     }
     protected void onStop(){
         super.onStop();
-        Toast.makeText(getApplicationContext(),"onStop Called",Toast.LENGTH_LONG).show();
+        Toast toast=Toast.makeText(getApplicationContext(),"onStop called",Toast.LENGTH_LONG);
+        toast.show();
+    }
+    protected void onResume(){
+        super.onResume();
+        Toast toast=Toast.makeText(getApplicationContext(),"onResume called",Toast.LENGTH_LONG);
+        toast.show();
     }
     protected void onDestroy(){
         super.onDestroy();
-        Toast.makeText(getApplicationContext(), "onDestroy Called", Toast.LENGTH_SHORT).show();
+        Toast toast= Toast.makeText(getApplicationContext(),"onDestroy called",Toast.LENGTH_LONG);
+        toast.show();
     }
-
-
-
 }
+
 ```
 
 ## OUTPUT
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/497a62fa-e3b7-4441-a5cb-50fb9e3fa660" />
+<img width="1917" height="962" alt="Screenshot 2026-07-21 092754" src="https://github.com/user-attachments/assets/31942693-cbf3-4f7e-9899-be7e9624e896" />
+<img width="1917" height="1015" alt="Screenshot 2026-07-21 092803" src="https://github.com/user-attachments/assets/19f5248e-8d80-4a39-a7ee-5c1533b983de" />
+<img width="1916" height="955" alt="Screenshot 2026-07-23 114806" src="https://github.com/user-attachments/assets/5150744b-fba8-424a-b0b8-c02015b854e8" />
+<img width="1911" height="968" alt="Screenshot 2026-07-23 114843" src="https://github.com/user-attachments/assets/d052c38a-3b0f-4a92-b82d-0b253bbd2a8c" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e6c901c2-daee-4d79-be7f-efdb35aedbca" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/855a6848-090d-40ad-8a65-2d548e329b93" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fab0c95b-db4c-4918-bbe9-6ec34109f0de" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/573dd8c5-45fc-45c1-a319-4bf0cf9cb5e2" />
 
 ## RESULT
 Thus a Simple Android Application create a HelloWorld Activity using all lifecycles methods to display messages using Android Studio is developed and executed successfully.
